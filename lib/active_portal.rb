@@ -1,4 +1,4 @@
-require "active_portal/engine"
+require 'active_portal/engine'
 
 module ActivePortal
 end
