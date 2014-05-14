@@ -46,10 +46,7 @@ mount ActivePortal::Engine => '/'
 + Make sure you set you put this line in ```config/environments/production.rb```:
 
 ```ruby
-config.action_mailer.default_url_options = { 
-                                             host: 'myhost.example.com', 
-                                             port: 3000
-                                           }
+config.action_mailer.default_url_options = { host: 'myhost.example.com', port: 3000 }
 ```
 
 ## License
