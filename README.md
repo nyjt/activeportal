@@ -44,9 +44,13 @@ mount ActivePortal::Engine => '/'
 
 + Copy https://raw.github.com/plataformatec/devise/master/lib/generators/templates/devise.rb into ```config/initializers/devise.rb``` and edit it.
 + Make sure you set you put this line in ```config/environments/production.rb```:
-  ```ruby
-  config.action_mailer.default_url_options = { host: 'myhostname.example.com', port: 3000 }
-  ```
+
+```ruby
+config.action_mailer.default_url_options = { 
+                                             host: 'myhost.example.com', 
+                                             port: 3000
+                                           }
+```
 
 ## License
 
