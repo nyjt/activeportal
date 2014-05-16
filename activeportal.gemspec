@@ -14,9 +14,13 @@ Gem::Specification.new do |s|
   s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.rdoc']
 
   s.add_dependency 'rails', '~> 4.1.0'
-  s.add_dependency 'devise', '~> 3.2.4'
+  s.add_dependency 'devise'
+  s.add_dependency 'devise-i18n'
+  s.add_dependency 'devise-i18n-views'
+  s.add_dependency 'http_accept_language'
 
   s.add_development_dependency 'pg'
   s.add_development_dependency 'rspec', '~> 3.0.0.beta'
   s.add_development_dependency 'rspec-rails', '~> 3.0.0.beta'
+  s.add_development_dependency 'capybara'
 end
