@@ -14,19 +14,40 @@ Every gem is optimised for a content heavy website with more thousand users.
 
 ### Install
 
-Put your Gemfile:
+__1.__ Put your Gemfile the following line:
 
 ```ruby
 gem 'activeportal', github: 'nyjt/activeportal'
+```
+
+__2.__ Execute bundle:
+
+```bash
+bundle install
+```
+
+__3.__ Mount the active_portal Rails engine. Put the following line into ```config/routes.rb```:
+
+```ruby
+mount ActivePortal::Engine => '/custom_name'
+```
+
+You can change custom_name prefix as you would like. Another option to mount the engine to '/' like here:
+
+```ruby
+mount ActivePortal::Engine => '/'
+
+# and here come the other routes
 ```
 
 ### Configuration
 
 + Copy https://raw.github.com/plataformatec/devise/master/lib/generators/templates/devise.rb into ```config/initializers/devise.rb``` and edit it.
 + Make sure you set you put this line in ```config/environments/production.rb```:
-  ```ruby
-  config.action_mailer.default_url_options = { host: 'myhostname.example.com', port: 3000 }
-  ```
+
+```ruby
+config.action_mailer.default_url_options = { host: 'myhost.example.com', port: 3000 }
+```
 
 ## License
 
