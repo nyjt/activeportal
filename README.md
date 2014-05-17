@@ -55,6 +55,14 @@ end
 
 Of course you can add or remove modules to change capaiblities of Devise.
 
+__5.__ Change the first line on ```app/controllers/application_controller.rb```:
+
+```ruby
+class ApplicationController < ActivePortal::ApplicationController
+```
+
+Your ```ApplicationController``` should inherit from
+```ActivePortal::ApplicationController```.
 
 ### Configuration
 
