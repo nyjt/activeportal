@@ -64,6 +64,12 @@ class ApplicationController < ActivePortal::ApplicationController
 Your ```ApplicationController``` should inherit from
 ```ActivePortal::ApplicationController```.
 
+__6.__ Make sure you have added root path to your routes:
+
+```ruby
+root 'pages#home'
+```
+
 ### Configuration
 
 + Copy https://raw.github.com/plataformatec/devise/master/lib/generators/templates/devise.rb into ```config/initializers/devise.rb``` and edit it.
