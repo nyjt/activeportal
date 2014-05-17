@@ -40,6 +40,22 @@ mount ActivePortal::Engine => '/'
 # and here come the other routes
 ```
 
+__4.__ Create your customised user model to ```app/models/active_portal/user.rb``` with the following content:
+
+```ruby
+module ActivePortal
+  class User < ActiveRecord::Base
+    # Include default devise modules. Others available are:
+    # :confirmable, :lockable, :timeoutable and :omniauthable
+    devise :database_authenticatable, :registerable, :confirmable,
+           :recoverable, :rememberable, :trackable, :validatable
+  end
+end
+```
+
+Of course you can add or remove modules to change capaiblities of Devise.
+
+
 ### Configuration
 
 + Copy https://raw.github.com/plataformatec/devise/master/lib/generators/templates/devise.rb into ```config/initializers/devise.rb``` and edit it.
