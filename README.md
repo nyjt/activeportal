@@ -61,8 +61,7 @@ __5.__ Change the first line on ```app/controllers/application_controller.rb```:
 class ApplicationController < ActivePortal::ApplicationController
 ```
 
-Your ```ApplicationController``` should inherit from
-```ActivePortal::ApplicationController```.
+Your ```ApplicationController``` should inherit from ```ActivePortal::ApplicationController```.
 
 __6.__ Make sure you have added root path to your routes:
 
