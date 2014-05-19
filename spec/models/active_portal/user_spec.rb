@@ -14,7 +14,7 @@ module ActivePortal
       end
 
       it 'should store new user in DB' do
-        expect { User.create!(valid_attributes) }.to change { User.count }.by(1)
+        expect { User.create!(valid_attributes) }.to change { User.count }.from(0).to(1)
       end
     end
   end
