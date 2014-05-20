@@ -37,7 +37,6 @@ feature 'Signing in' do
     click_button 'Sign in'
 
     visit active_portal.user_session_path(default_params)
-
     expect(page).to have_text('You are already signed in.')
   end
 end
