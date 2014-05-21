@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'rails', '>= 4.1.1'
   s.add_dependency 'devise'
   s.add_dependency 'devise-i18n'
-  s.add_dependency 'devise-i18n-views'
+  s.add_dependency 'devise-i18n-bootstrap'
   s.add_dependency 'http_accept_language'
 
   s.add_development_dependency 'pg'

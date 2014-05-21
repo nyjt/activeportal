@@ -10,7 +10,7 @@ Every gem is optimised for a content heavy website with more thousand users.
 ### Features
 
 + User authentication and registration with confirmation (devise)
-+ I18n and language detection (devise-i18n, devise-i18n-views, http\_accept\_language)
++ I18n and language detection (devise-i18n, devise-i18n-bootstrap, http\_accept\_language)
 
 ## Documentation
 
