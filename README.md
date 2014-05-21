@@ -1,5 +1,7 @@
 # ActivePortal
 
+[![Build Status](https://travis-ci.org/nyjt/activeportal.svg?branch=master)](https://travis-ci.org/nyjt/activeportal)
+
 ## What's this?
 
 ActivePortal is a gem for Ruby on Rails 4 applications. It contains a group of gem that need for a modern portal.
