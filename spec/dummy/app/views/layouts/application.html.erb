@@ -19,6 +19,7 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+    <%= link_to 'Logout', active_portal.destroy_user_session_url, data: { method: :delete } if current_user %>
 
     <%= yield %>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
