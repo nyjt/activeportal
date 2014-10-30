@@ -1,6 +1,5 @@
 source "https://rubygems.org"
 
-gem 'devise-i18n-bootstrap', path: '../bootstrap_devise_i18n' #github: 'nyjt/devise-i18n-bootstrap', branch: 'refactoring'
 # Declare your gem's dependencies in active_portal.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
 # development dependencies will be added by default to the :development group.
