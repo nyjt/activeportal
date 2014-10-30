@@ -1,6 +1,8 @@
 # ActivePortal
 
 [![Build Status](https://travis-ci.org/nyjt/activeportal.svg?branch=master)](https://travis-ci.org/nyjt/activeportal)
+[![Dependency Status](https://gemnasium.com/nyjt/activeportal.svg)](https://gemnasium.com/nyjt/activeportal)
+[![Code Climate](https://codeclimate.com/github/nyjt/activeportal.png)](https://codeclimate.com/github/nyjt/activeportal)
 
 ## What's this?
 
