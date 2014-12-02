@@ -16,6 +16,14 @@ Every gem is optimised for a content heavy website with more thousand users.
 
 ## Documentation
 
+### Requirements
+
+Before install this gem make sure you did these steps:
+
+__1.__ Add ```gem 'devise'``` to your ```Gemfile```
+__2.__ execute following command ```bundle exec rails generate devise:install```
+
+
 ### Install
 
 __1.__ Put your Gemfile the following line:
@@ -73,13 +81,19 @@ __6.__ Make sure you have added root path to your routes:
 root 'pages#home'
 ```
 
+__7.__ Database migrations:
+
+```ruby
+bundle exec rake railties:install:migrations
+bundle exec rake db:migrate
+```
+
 ### Configuration
 
-+ Copy https://raw.github.com/plataformatec/devise/master/lib/generators/templates/devise.rb into ```config/initializers/devise.rb``` and edit it.
 + Make sure you added this line to ```config/environments/production.rb```:
 
 ```ruby
-config.action_mailer.default_url_options = { host: 'myhost.example.com', port: 3000 }
+config.action_mailer.default_url_options = { host: 'myhost.example.com' }
 ```
 
 ## License
