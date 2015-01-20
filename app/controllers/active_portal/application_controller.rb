@@ -3,7 +3,7 @@ module ActivePortal
     before_action :set_locale
 
     def default_url_options(options = {})
-      options.merge(locale: I18n.locale)
+      params[:locale] ? options.merge(locale: I18n.locale) : options
     end
 
     protected
